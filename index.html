@@ -13,27 +13,49 @@
 
 <body>
     <header>
+        <!-- nav bar -->
+        <nav class="container mx-auto sm:flex justify-between items-center p-5">
+            <img class="w-auto h-10" src="./icons/Logo.png" alt="">
+            <div>
+                <ul class="flex">
+                    <li class="mr-6">
+                        <a class="font-semibold text-slate-800 hover:text-blue-800" href="#">Home</a>
+                    </li>
+                    <li class="mr-6">
+                        <a class="font-semibold text-slate-800 hover:text-blue-800" href="#">Product</a>
+                    </li>
+                    <li class="mr-6">
+                        <a class="font-semibold text-slate-800 hover:text-blue-800" href="#">About</a>
+                    </li>
+                    <li class="mr-6">
+                        <a class="font-semibold text-slate-800 hover:text-blue-800" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <!-- top banner -->
-        <section class="container mx-auto my-10 bg-slate-600 rounded-lg">
-            <div class="flex justify-evenly items-center">
+        <section class="container mx-auto mt-2 mb-10">
+            <div class="sm:flex justify-evenly items-center">
                 <div>
-                    <img class="" src="./images/top-banner.png" alt="">
+                    <img src="./images/top-banner.png" alt="">
                 </div>
-                <div class="space-y-5">
+                <div class="space-y-5 mt-10 sm:mt-0">
                     <h1 class="uppercase text-7xl font-semibold">
                         <span class="text-orange-600">Nike React</span>
                         <br>
                         <span class="text-slate-800">Infinity Run</span>
                     </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, cum.</p>
-                    <button class="bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg">
+                    <a href="#casual-shoes"
+                        class="inline-block bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path
                                 d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                         </svg>
                         BUY NOW
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -41,9 +63,9 @@
 
     <main class="container mx-auto">
         <!-- casual shoes section -->
-        <section class="my-28">
+        <section class="my-28" id="casual-shoes">
             <h1 class="text-4xl font-bold mb-5">Casual Shoes</h1>
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
                 <!-- shoes 1 -->
                 <div class="space-y-2 rounded-lg shadow-lg p-8">
                     <div class="bg-slate-200 rounded-xl p-2">
@@ -110,7 +132,7 @@
         <!-- formal shoes section -->
         <section class="my-28">
             <h1 class="text-4xl font-bold mb-5">Formal Shoes</h1>
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
                 <!-- shoes 1 -->
                 <div class="space-y-2 rounded-lg shadow-lg p-8">
                     <img src="./images/fs-1.png" alt="">
@@ -170,7 +192,7 @@
 
         <!-- our services -->
         <section class="mt-28">
-            <div class="grid grid-cols-2 gap-10 bg-slate-100 rounded-2xl p-20">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-10 bg-slate-100 rounded-2xl p-20">
                 <div class="flex items-center gap-7">
                     <img class="w-24 h-24" src="./icons/house.png" alt="">
                     <div class="space-y-1">
